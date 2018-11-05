@@ -1,5 +1,6 @@
 import uniqueRandomArray from 'unique-random-array';
 import starWarsNames from './starwars-names.json';
+import * as first from "./first/first";
 
 const getRandomItem = uniqueRandomArray(starWarsNames);
 
@@ -7,7 +8,8 @@ module.exports = {
   all: starWarsNames,
   random: random,
   getSomething: getSomething,
-  getNothing: getNothing
+  getNothing: getNothing,
+  doit: first.doit
 };
 
 function random(number) {
